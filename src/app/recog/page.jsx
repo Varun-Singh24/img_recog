@@ -5,10 +5,9 @@ import * as mobilenet from "@tensorflow-models/mobilenet";
 import "@tensorflow/tfjs";
 
 function Recognize() {
-    const [imageUrl, setImageUrl] = useState(null);
-    const [loading, setLoading] = useState(false);
-    const [predictions, setPredictions] = useState(null) ;
-
+  const [imageUrl, setImageUrl] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [predictions, setPredictions] = useState(null);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -24,18 +23,17 @@ function Recognize() {
   };
 
   const handleClassify = async () => {
-    try{
-        setLoading(true) ;
-        const imgElement = document.querySelector("#uploaded-image") ;
-        const model = await mobilenet.load() ;
-        const prediction = await model.classify(imgElement) ;
-        console.log(prediction) ;
-        setPredictions(prediction);
-        console.log(prediction) ;
-    }
-    catch(error) {  
-    } finally{
-        setLoading(false) ; 
+    try {
+      setLoading(true);
+      const imgElement = document.querySelector("#uploaded-image");
+      const model = await mobilenet.load();
+      const prediction = await model.classify(imgElement);
+      console.log(prediction);
+      setPredictions(prediction);
+      console.log(prediction);
+    } catch (error) {
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -84,5 +82,5 @@ function Recognize() {
       </div>
     </div>
   );
-} 
+}
 export default Recognize;
