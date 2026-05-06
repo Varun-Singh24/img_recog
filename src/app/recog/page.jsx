@@ -39,6 +39,7 @@ function Recognize() {
 
   return (
     <div className="h-screen w-full bg-indigo-400 flex flex-col gap-5 justify-center items-center max-w-full max-h-screen object-contain rounded">
+      {/* max-w-full max-h-screen object-contain rounded */}
       <label>
         <span className="border-2 border-solid rounded p-3 cursor-pointer gap-2">
           Upload Here
