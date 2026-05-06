@@ -55,7 +55,8 @@ function Recognize() {
         <>
           <img
             id="uploaded-image"
-            className="w-[500px] rounded"
+            className="w-[500px] rounded max-w-full max-h-screen object-contain rounded"
+            {/* Added this line  */}
             src={imageUrl}
           />
 
