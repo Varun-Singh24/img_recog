@@ -1,86 +1,32 @@
-Img_Recog
-An AI-powered Image Recognition web application built using Next.js, TensorFlow.js, and MobileNet. The application allows users to upload images and classify objects directly in the browser using pre-trained machine learning models.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+*  Get the app here : https://img-recog.vercel.app/recog
+## Getting Started
 
-🚀 Features
-Upload any image from your device
-Real-time image classification using TensorFlow.js
-MobileNet pre-trained deep learning model
-Responsive UI built with Next.js and Tailwind CSS
-Fast client-side inference
-Camera/Webcam integration support (work in progress)
+First, run the development server:
 
-🛠️ Tech Stack
-Next.js
-React.js
-TensorFlow.js
-MobileNet
-Tailwind CSS
-JavaScript
-
-📂 Project Structure
-img_recog/
-│
-├── public/
-├── src/
-│   ├── app/
-│   │   ├── page.js
-│   │   ├── recog/
-│   │   │   └── page.jsx
-│
-├── package.json
-├── package-lock.json
-└── README.md
-
-
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/Varun-Singh24/img_recog.git
-
-2️⃣ Navigate into the project folder
-cd img_recog
-
-3️⃣ Install dependencies
-npm install
-
-4️⃣ Run the development server
+```
 npm run dev
+# or
+yarn dev
+# or
+bun dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-🌐 Open in Browser
-http://localhost:3000
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-🧠 How It Works
-User uploads an image
-TensorFlow.js loads the MobileNet model
-The uploaded image is processed in the browser
-The model predicts the object category
-Predictions with confidence scores are displayed
+## Learn More
 
-📸 Future Improvements
-Real-time webcam object detection
-COCO-SSD integration
-Bounding box detection
-Multiple object recognition
-Better UI/UX
-Deployment optimization
+To learn more about Next.js, take a look at the following resources:
 
-🚀 Deployment
-This project can be deployed easily on:
-Vercel
-Netlify
-GitHub Pages
-Recommended platform: Vercel
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-👨‍💻 Author
-Varun Pratap Singh
-GitHub: https://github.com/Varun-Singh24
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-⭐ Support
-If you like this project:
-Star the repository
-Fork the project
-Share feedback
+## Deploy on Vercel
 
-📄 License
-This project is open-source and available under the MIT License.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js. 
